@@ -56,6 +56,17 @@ RUN unzip /EXECDIR/Mothur.linux_64.zip -d /EXECDIR
 RUN rm -rf /EXECDIR/Mothur.linux_64.zip /EXECDIR/__MACOSX
 RUN chmod -R 0755 /EXECDIR/mothur
 ##############################################################
+# Software:             MAFFT
+# Software Version:     7.22
+# Software Website:     -
+# Description:          MAFFT
+##############################################################
+
+RUN wget http://mafft.cbrc.jp/alignment/software/mafft-7.222-linux.tgz -P /EXECDIR 
+RUN tar zxvf /EXECDIR/mafft-7.222-linux.tgz -C /EXECDIR
+RUN rm -rf /EXECDIR/mafft-7.222-linux.tgz
+RUN chmod -R 0755 /EXECDIR
+##############################################################
 # Software:             SILVA_SEED
 # Software Version:     128
 # Software Website:     -
