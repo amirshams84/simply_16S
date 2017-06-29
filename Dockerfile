@@ -76,14 +76,3 @@ RUN chmod -R 0755 /EXECDIR
 RUN wget https://www.mothur.org/w/images/a/a4/Silva.seed_v128.tgz -P /INDEXDIR
 RUN tar zxvf /INDEXDIR/Silva.seed_v128.tgz -C /INDEXDIR
 RUN rm -rf /INDEXDIR/Silva.seed_v128.tgz
-
-##############################################################
-# Software:             GREENGENES_GOLD
-# Software Version:     128
-# Software Website:     -
-# Description:          silva_seed_128
-##############################################################
-
-RUN wget https://www.mothur.org/w/images/a/a4/Silva.seed_v128.tgz -P /INDEXDIR
-RUN tar zxvf /INDEXDIR/Silva.seed_v128.tgz -C /INDEXDIR
-RUN rm -rf /INDEXDIR/Silva.seed_v128.tgz
