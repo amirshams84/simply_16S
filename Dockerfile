@@ -11,7 +11,7 @@ MAINTAINER Amir Shams <amir.shams84@gmail.com>
 RUN yum -y update ;
 RUN yum clean all ;
 RUN yum install -y epel-release ;
-RUN yum install -y ansible git gcc gcc-c++ make net-tools sudo which wget file patch libtool texinfo tar unzip bzip2 bzip2-devel ; 
+RUN yum install -y ansible git gcc gcc-c++ make net-tools sudo which wget file patch libtool texinfo tar zip unzip bzip2 bzip2-devel ; 
 RUN yum install -y openssl openssl-devel readline readline-devel sqlite-devel tk-devel zlib zlib-devel ncurses-devel python-pip mc ;
 RUN yum install -y tbb psmisc python-devel ;
 RUN yum clean all ;
