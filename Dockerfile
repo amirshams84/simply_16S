@@ -76,3 +76,12 @@ RUN chmod -R 0755 /EXECDIR
 RUN wget https://www.mothur.org/w/images/a/a4/Silva.seed_v128.tgz -P /INDEXDIR
 RUN tar zxvf /INDEXDIR/Silva.seed_v128.tgz -C /INDEXDIR
 RUN rm -rf /INDEXDIR/Silva.seed_v128.tgz
+##############################################################
+# Dockerfile Version:   1.0
+# Software:             simply_16S
+# Software Version:     1.0
+# Software Website:     .
+# Description:          python script 
+##############################################################
+RUN wget https://github.com/amirshams84/simply_16S/raw/master/simply_16S.pyc -O /simply_16S.pyc
+RUN chmod -R 0755 /simply_16S.pyc
